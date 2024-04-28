@@ -1,0 +1,38 @@
+.preview_body {
+    margin-bottom: 30px;
+
+    max-width: 60%;
+    width: auto;
+
+    text-align: justify;
+
+    @media (max-width: 1000px) {
+        max-width: 80%;
+    }
+
+}
+
+.text_content {
+    a {
+        color: rgb(255, 94, 0);
+        
+        &:hover {
+            transition: 0.3s ease;
+            text-decoration-line: underline;
+            color: red;
+        }
+    }
+}
+
+.link_button {
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.homepage {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}

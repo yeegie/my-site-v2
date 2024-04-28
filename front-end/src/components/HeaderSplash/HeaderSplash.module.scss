@@ -1,0 +1,51 @@
+@import '../../app/variables';
+
+#header {
+    background: var(--header-bg-color);
+    
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-items: center;
+    align-items: center;
+
+    & button {
+        margin-left: auto;
+        margin-right: 2rem;
+    }
+
+    svg {
+        fill: white;
+    }
+}
+
+#title { 
+    color: red;
+    font-size: 20px;
+}
+
+.me {
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-left: 30px;
+    cursor: pointer;
+
+    justify-self: left;
+    margin-left: 2em;
+}
+
+@media (max-width: 500px) {
+    #header {
+        grid-template-columns: 1fr;
+
+        & button {
+            display: none;
+        }
+    }
+
+    .me {
+        margin: 0;
+        justify-self: center;
+    }
+}

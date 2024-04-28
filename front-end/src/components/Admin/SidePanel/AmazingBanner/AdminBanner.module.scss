@@ -1,0 +1,24 @@
+.banner {
+    height: 100px;
+
+    position: relative;
+
+    .text-container {
+        position: absolute;
+
+        top: 40px;
+        left: 60px;
+
+        font-size: 20px;
+        letter-spacing: 1.5px;
+
+        color: white;
+        font-weight: bold;
+    }
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}

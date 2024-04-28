@@ -1,0 +1,21 @@
+@import '../../../app/variables';
+
+
+.table-inspector {
+    background-color: #eeeeee;
+}
+
+.header {
+    background-color: #a3a3a3;
+
+    width: auto;
+    height: 50px;
+
+    &,p {
+        
+    }
+}
+
+.content {
+    display: flex;
+}

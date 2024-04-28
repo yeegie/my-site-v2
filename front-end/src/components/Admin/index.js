@@ -1,0 +1,1 @@
+export { TableInspector } from './TableInspector';

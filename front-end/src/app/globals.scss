@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import './variables';
+
+:root {
+    // Main
+    --header-bg-color: #434343;
+    --footer-bg-color: #434343;
+    --bg-color: white;
+
+    // Welcome block
+    --welcome-orbit-color: white;
+    --welcome-bg-color: white;
+
+    // Work block
+    //// Cards
+    --card-bg-color: white;
+
+
+    // Stack block
+    --stack-tag-default-color: #888888;
+}
+
+
+[data-theme="dark"] body {
+    // Main
+    --bg-color: #434343;
+
+    // Welcome block
+    --welcome-orbit-color: #A0A0A0;
+    --welcome-bg-color: #282828;
+
+    // Work block
+    //// Cards
+    --card-bg-color: #5F5F5F;
+    
+    // Stack block
+}
+
+[data-theme="light"] body {
+    // Main
+    --bg-color: white;
+
+    // Welcome block
+    --welcome-orbit-color: black;
+    --welcome-bg-color: #CCCCCC;
+
+    // Work block
+    //// Cards
+    --card-bg-color: #EEEEEE;
+    
+    // Stack block
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-color);
+    margin: 0;
+    user-select: none;
+}
+
+

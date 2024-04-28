@@ -1,0 +1,45 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Work {
+  id                String        @id @default(uuid()) @unique
+  title             String
+  description_short String
+  description_full  String
+  category          Category[] @relation("CategoryToWork")
+  github            String?
+  url               String?
+  is_visible        Boolean    @default(false)
+  image             Image[]
+  stack             Stack[]    @relation("StackToWork")
+}
+
+model Stack {
+  id       Int      @id @default(autoincrement())
+  title    String
+  gradient String[]
+  work     Work[]   @relation("StackToWork")
+}
+
+model Image {
+  id             Int    @id @default(autoincrement())
+  file_name      String
+  full_path      String
+  file_extension String
+  workId         Int?
+  work           Work?  @relation(fields: [workId], references: [id])
+}
+
+model Category {
+  id          Int     @id @default(autoincrement())
+  name        String
+  plural_name String?
+  description String?
+  work        Work[]  @relation("CategoryToWork")
+}

@@ -1,0 +1,19 @@
+@import '@/app/variables';
+
+
+.tag {
+    height: 25px;
+    width: auto;
+
+    background-color: var(--stack-tag-default-color);
+    border-radius: $stack-tag-radius;
+    min-width: 50px;
+    padding: 0px 10px;
+
+    & p {
+        padding: auto;
+        text-align: center;
+        font-size: 15px;
+        color: $stack-tag-fc;
+    }
+}

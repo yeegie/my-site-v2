@@ -1,0 +1,23 @@
+@import '../../../app/variables';
+
+
+.card {
+    height: 100%;
+    width: 300px;
+
+    background-color: var(--card-bg-color);
+    border-radius: $card-radius;
+
+    cursor: pointer;
+
+    &.card img {
+        object-fit: cover;
+
+        width: 100%;
+        height: 135px;
+    }
+}
+
+.stack-group {
+    gap: 5px;
+}

@@ -1,0 +1,47 @@
+.preview_body {
+    margin-bottom: 30px;
+
+    display: grid;
+
+    gap: 20px;
+
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+
+    max-width: 80%;
+    width: auto;
+
+    .text_content {
+        text-align: justify;
+
+        a {
+            color: rgb(255, 94, 0);
+            
+            &:hover {
+                transition: 0.3s ease;
+                text-decoration-line: underline;
+                color: red;
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .preview_body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image_block {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.link_button {
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}

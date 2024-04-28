@@ -1,0 +1,1 @@
+export { HeaderSplash } from './HeaderSplash';

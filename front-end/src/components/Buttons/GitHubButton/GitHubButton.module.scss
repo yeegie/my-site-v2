@@ -1,0 +1,45 @@
+// .button {
+//     width: 140px;
+//     height: 50px;
+
+//     color: black;
+
+//     border: solid 3px black;
+//     border-radius: 50px;
+
+//     font-size: 20pt;
+//     font-style: normal;
+
+//     cursor: pointer;
+
+//     position: relative;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+
+//     padding: 10px;
+
+//     &:hover {
+//         color: white;
+//         background-color: black;
+//         transition: all 0.1s ease 0s;
+//     }
+
+//     .icon {
+//         transform: scale(1.4);
+//         flex-shrink: 0;
+//         margin-right: 10px;
+//     }
+// }
+
+.button {
+    & p {
+        padding-right: 12px;
+    }
+
+    & svg {
+        transform: scale(2);
+        margin-left: 12px;
+        margin-right: 6px;
+    }
+}

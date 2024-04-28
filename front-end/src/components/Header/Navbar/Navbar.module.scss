@@ -1,0 +1,19 @@
+.link {
+    font-size: 20px;
+    color: white;
+
+    display: inline-block;
+
+    padding: 0px 20px;
+
+    &:hover {
+        transition: all 0.3s ease 0s;
+        color: red;
+    }
+}
+
+.navbar {
+    @media (max-width: 500px) {
+        display: none;
+    }
+}
